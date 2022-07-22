@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Strava_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Strava_white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Strava" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M24,48 C10.745166,48 0,37.254834 0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 Z M22.1701435,20.0803696 L25.5190397,26.6903426 L30.4414877,26.6903426 L22.1701435,10.362644 L13.899999,26.6903426 L18.8236467,26.6903426 L22.1701435,20.0803696 Z M27.9495222,31.7028518 L25.4569856,26.7849628 L21.793523,26.7849628 L27.9495222,38.9337994 L34.1012025,26.7849628 L30.4403793,26.7849628 L27.9495222,31.7028518 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Bing_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Bing_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bing" fill="#6F6F6F" fill-rule="nonzero">
+            <path d="M24,48 C10.7451652,48 0,37.2548348 0,24 C0,10.7451652 10.7451652,0 24,0 C37.2548348,0 48,10.7451652 48,24 C48,37.2548348 37.2548348,48 24,48 Z M15.2,9.6 L15.2,35.1980344 L20.9562801,38.4 L35.344868,30.100919 L35.344868,23.5796014 L22.5770134,19.0940296 L25.0834578,25.3324697 L29.0563654,27.1965382 L20.9529993,31.8744333 L20.9529993,11.623857 L15.2,9.6 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

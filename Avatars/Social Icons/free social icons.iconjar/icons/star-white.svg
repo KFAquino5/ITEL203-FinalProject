@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Star_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Star_white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Star" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M24,48 C10.745166,48 0,37.254834 0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 Z M24,31.2 L32.4641076,35.6498447 L30.8476069,26.2249223 L37.6952138,19.5501553 L28.2320538,18.1750777 L24,9.6 L19.7679462,18.1750777 L10.3047862,19.5501553 L17.1523931,26.2249223 L15.5358924,35.6498447 L24,31.2 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

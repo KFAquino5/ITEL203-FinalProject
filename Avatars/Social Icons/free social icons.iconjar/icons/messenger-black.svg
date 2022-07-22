@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Messenger_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Messenger_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messenger" fill="#6F6F6F" fill-rule="nonzero">
+            <path d="M24,48 C10.745166,48 0,37.254834 0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 Z M14.8572743,33.2414867 L14.8572743,38.3643186 L19.647377,35.6410619 C20.9826266,36.0259115 22.4019823,36.2336283 23.8725664,36.2336283 C31.7556106,36.2336283 38.1451327,30.2710089 38.1451327,22.9168142 C38.1451327,15.5621098 31.7556106,9.6 23.8725664,9.6 C15.9900318,9.6 9.6,15.5621098 9.6,22.9168142 C9.6,27.0813451 11.6488778,30.7998584 14.8572743,33.2414867 Z" id="Combined-Shape"></path>
+            <polygon id="Shape" points="22.3484602 19.2694089 14.6513416 27.4190442 21.6563682 23.575646 25.3163894 27.4190442 32.9700531 19.2694089 26.042761 23.0455222"></polygon>
+        </g>
+    </g>
+</svg>

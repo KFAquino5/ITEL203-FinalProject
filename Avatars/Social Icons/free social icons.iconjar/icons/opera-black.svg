@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Opera_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Opera_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Opera" fill="#6F6F6F" fill-rule="nonzero">
+            <path d="M24,48 C10.7451652,48 0,37.2548348 0,24 C0,10.7451652 10.7451652,0 24,0 C37.2548348,0 48,10.7451652 48,24 C48,37.2548348 37.2548348,48 24,48 Z M24,36.0800094 C30.627417,36.0800094 36,30.7253351 36,24.1200096 C36,17.5146841 30.627417,12.1600098 24,12.1600098 C17.372583,12.1600098 12,17.5146841 12,24.1200096 C12,30.7253351 17.372583,36.0800094 24,36.0800094 Z" id="Combined-Shape"></path>
+            <ellipse id="Oval-2" cx="24.079961" cy="24.0800003" rx="6.32000008" ry="8.88000032"></ellipse>
+        </g>
+    </g>
+</svg>

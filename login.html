@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<link href="style.css" rel="stylesheet" type="text/css">
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sign in • The Virtual University</title>
+    <!--StyleSheet CsS File-->
+    <link rel="stylesheet" href="style.css">
+    <!--FAV ICON-->
+    <link rel="shortcut icon" href="ShortcutLogo.png">
+   </head>
+
+<body>
+  <section class="header">
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="logo 3.png">
+        </a>
+        <!--For Responsive Menu-->
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+
+        <!--Navigation-->
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Forums</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">Database</li>
+              <div class="dropdown-content">
+                <a href="#">Professors</a>
+                <a href="#">Students</a>
+              </div>
+            </div>
+            <li><a class="active" href="login.html">Sign in</a></li>
+        </ul>
+    </nav> 
+
+  <div class="container">
+    <div class="title">Sign in</div>
+    <div class="content">
+      <form action="connect.php" method="post">
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your Email" name="email" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" name="pw" required>
+          </div>
+          
+        </div>
+    
+        <div class="remember">
+            <input type="checkbox" id="rememberme" name="rememberme" value="password">
+            <label for="rememberme"> Remember me</label>
+ 
+        </div>
+       
+
+        <div class="button">
+          <input type="submit" value="Log in">
+        </div>
+
+      
+
+
+        <div class="donthave-account">Don't have an account yet? <span><a href="register.html">Register here</a></span>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="forgotpw"><span><a href="#">Forgot Password?</a></span>
+    </div>
+
+  </div>
+
+</body>
+</html>

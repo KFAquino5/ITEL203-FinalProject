@@ -1,0 +1,1192 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%APL_DSC_Encoding: UTF8
+%APLProducer: (Version 10.13.6 (Build 17G65) Quartz PS Context)
+%%Title: (Unknown)
+%%Creator: (Unknown)
+%%CreationDate: (Unknown)
+%%For: (Unknown)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox: 0 0 48 48
+%%EndComments
+%%BeginProlog
+%%BeginFile: cg-pdf.ps
+%%Copyright: Copyright 2000-2004 Apple Computer Incorporated.
+%%Copyright: All Rights Reserved.
+currentpacking true setpacking
+/cg_md 141 dict def
+cg_md begin
+/L3? languagelevel 3 ge def
+/bd{bind def}bind def
+/ld{load def}bd
+/xs{exch store}bd
+/xd{exch def}bd
+/cmmtx matrix def
+mark
+/sc/setcolor
+/scs/setcolorspace
+/dr/defineresource
+/fr/findresource
+/T/true
+/F/false
+/d/setdash
+/w/setlinewidth
+/J/setlinecap
+/j/setlinejoin
+/M/setmiterlimit
+/i/setflat
+/rc/rectclip
+/rf/rectfill
+/rs/rectstroke
+/f/fill
+/f*/eofill
+/sf/selectfont
+/s/show
+%/as/ashow
+/xS/xshow
+/yS/yshow
+/xyS/xyshow
+/S/stroke
+/m/moveto
+/l/lineto
+/c/curveto
+/h/closepath
+/n/newpath
+/q/gsave
+/Q/grestore
+counttomark 2 idiv
+%dup (number of ld's = )print == flush	% *** how many 
+{ld}repeat pop
+/SC{	% CSname
+    /ColorSpace fr scs
+}bd
+/sopr /setoverprint where{pop/setoverprint}{/pop}ifelse ld
+/soprm /setoverprintmode where{pop/setoverprintmode}{/pop}ifelse ld
+/cgmtx matrix def
+/sdmtx{cgmtx currentmatrix pop}bd
+/CM {cgmtx setmatrix}bd		% pop the ctm: our gstate ctm on host is now identity
+/cm {cmmtx astore CM concat}bd	% reset the matrix and then concat
+/W{clip newpath}bd
+/W*{eoclip newpath}bd
+
+statusdict begin product end dup (HP) anchorsearch{
+    pop pop pop	% pop off the search results
+    true
+}{
+    pop	% previous search result
+   (hp) anchorsearch{
+	pop pop true
+    }{
+	pop false
+    }ifelse
+}ifelse
+
+{	% HP is the product: we use this method of stroking because of a bug in their clone printers with certain T3 fonts
+    { 
+	{ % charCode Wx Wy
+	    pop pop % charCode
+	    (0)dup 0 4 -1 roll put
+	    F charpath
+	}cshow
+    }
+}{
+    {F charpath}
+}ifelse
+/cply exch bd
+/cps {cply stroke}bd
+/pgsave 0 def
+/bp{/pgsave save store}bd
+/ep{pgsave restore showpage}def		% dont' bind
+/re{4 2 roll m 1 index 0 rlineto 0 exch rlineto neg 0 rlineto h}bd
+
+/scrdict 10 dict def
+/scrmtx matrix def
+/patarray 0 def
+/createpat{patarray 3 1 roll put}bd
+/makepat{
+scrmtx astore pop
+gsave
+initgraphics
+CM 
+patarray exch get
+scrmtx
+makepattern
+grestore
+setpattern
+}bd
+
+/cg_BeginEPSF{
+    userdict save/cg_b4_Inc_state exch put
+    userdict/cg_endepsf/cg_EndEPSF load put
+    count userdict/cg_op_count 3 -1 roll put 
+    countdictstack dup array dictstack userdict/cg_dict_array 3 -1 roll put
+    3 sub{end}repeat
+    /showpage {} def
+    0 setgray 0 setlinecap 1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [] 0 setdash newpath
+    false setstrokeadjust false setoverprint	% don't use F
+}bd
+/cg_EndEPSF{
+  countdictstack 3 sub { end } repeat
+  cg_dict_array 3 1 index length 3 sub getinterval
+  {begin}forall
+  count userdict/cg_op_count get sub{pop}repeat
+  userdict/cg_b4_Inc_state get restore
+  F setpacking
+}bd
+
+/cg_biproc{currentfile/RunLengthDecode filter}bd
+/cg_aiproc{currentfile/ASCII85Decode filter/RunLengthDecode filter}bd
+/ImageDataSource 0 def
+L3?{
+    /cg_mibiproc{pop pop/ImageDataSource{cg_biproc}def}bd
+    /cg_miaiproc{pop pop/ImageDataSource{cg_aiproc}def}bd
+}{
+    /ImageBandMask 0 def
+    /ImageBandData 0 def
+    /cg_mibiproc{
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/RunLengthDecode filter dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+    /cg_miaiproc{	
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/ASCII85Decode filter/RunLengthDecode filter
+	    dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+}ifelse
+/imsave 0 def
+/BI{save/imsave xd mark}bd
+/EI{imsave restore}bd
+/ID{
+counttomark 2 idiv
+dup 2 add	% leave room for imagetype and imagematrix
+dict begin
+{def} repeat
+pop		% remove mark
+/ImageType 1 def
+/ImageMatrix[Width 0 0 Height neg 0 Height]def
+currentdict dup/ImageMask known{ImageMask}{F}ifelse exch
+% currentdict on stack
+L3?{
+    dup/MaskedImage known
+    { 
+	pop
+	<<
+	    /ImageType 3
+	    /InterleaveType 2
+	    /DataDict currentdict
+	    /MaskDict
+	    <<  /ImageType 1
+		/Width Width
+		/Height Height
+		/ImageMatrix ImageMatrix
+		/BitsPerComponent 1
+		/Decode [0 1]
+		currentdict/Interpolate known
+		{/Interpolate Interpolate}if
+	    >>
+	>>
+    }if
+}if
+exch
+{imagemask}{image}ifelse	
+end	% pop imagedict from dict stack
+}bd
+
+/cguidfix{statusdict begin mark version end
+{cvr}stopped{cleartomark 0}{exch pop}ifelse
+2012 lt{dup findfont dup length dict begin
+{1 index/FID ne 2 index/UniqueID ne and
+{def} {pop pop} ifelse}forall
+currentdict end definefont pop
+}{pop}ifelse
+}bd
+/t_array 0 def
+/t_i 0 def
+/t_c 1 string def
+/x_proc{ % x y
+    exch t_array t_i get add exch moveto
+    /t_i t_i 1 add store
+}bd
+/y_proc{ % x y
+    t_array t_i get add moveto
+    /t_i t_i 1 add store
+}bd
+/xy_proc{
+        % x y
+	t_array t_i 2 copy 1 add get 3 1 roll get 
+	4 -1 roll add 3 1 roll add moveto
+	/t_i t_i 2 add store
+}bd
+/sop 0 def		% don't bind sop
+/cp_proc/x_proc ld 	% default moveto proc is for xwidths only
+/base_charpath		% string array
+{
+    /t_array xs
+    /t_i 0 def
+    { % char
+	t_c 0 3 -1 roll put
+        currentpoint
+	t_c cply sop
+        cp_proc
+    }forall
+    /t_array 0 def
+}bd
+/sop/stroke ld		% default sop is stroke. Done here so we don't bind in /base_charpath 
+
+% default sop is stroke
+/nop{}def
+/xsp/base_charpath ld
+/ysp{/cp_proc/y_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xysp{/cp_proc/xy_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xmp{/sop/nop ld /cp_proc/x_proc ld base_charpath/sop/stroke ld}bd
+/ymp{/sop/nop ld /cp_proc/y_proc ld base_charpath/sop/stroke ld}bd
+/xymp{/sop/nop ld /cp_proc/xy_proc ld base_charpath/sop/stroke ld}bd
+/refnt{ % newname encoding fontname
+findfont dup length dict copy dup
+/Encoding 4 -1 roll put 
+definefont pop
+}bd
+/renmfont{ % newname fontname
+findfont dup length dict copy definefont pop
+}bd
+
+L3? dup dup{save exch}if
+
+% languagelevel2 ONLY code goes here
+
+/Range 0 def
+/DataSource 0 def
+/val 0 def
+/nRange 0 def
+/mulRange 0 def
+/d0 0 def
+/r0 0 def
+/di 0 def
+/ri 0 def
+/a0 0 def
+/a1 0 def
+/r1 0 def
+/r2 0 def
+/dx 0 def
+/Nsteps 0 def
+/sh3tp 0 def
+/ymax 0 def
+/ymin 0 def
+/xmax 0 def
+/xmin 0 def
+
+/setupFunEval % funDict -- 	% this calculates and sets up a function dict for evaulation.
+{
+    begin
+	/nRange Range length 2 idiv store
+	/mulRange   % precompute the range data needed to map a sample value from the table to a range value
+		    % this data looks like [ range0mul range0min range1mul range1min ... rangeN-1mul rangeN-1min ]
+	[ 
+	    0 1 nRange 1 sub
+	    { % index
+		    2 mul/nDim2 xd		% 2*dimension# we are dealing with
+		    Range nDim2 get		% ymin
+		    Range nDim2 1 add get	% ymin ymax 
+		    1 index sub			% ymin (ymax-ymin)
+						% xmin = 0, xmax = 255 (2^bitspersample - 1)
+		    255 div			% ymin (ymax-ymin)/(xmax - xmin)
+		    exch			% (ymax-ymin)/(xmax - xmin) ymin
+	    }for
+	]store
+    end
+}bd
+
+/FunEval % val1 fundict -> comp1 comp2 ... compN
+{
+    begin
+	% the value passed in is the base index into the table
+	nRange mul /val xd	% compute the actual index to the table
+				% since there are nRange entries per base index
+	0 1 nRange 1 sub
+	{
+	    dup 2 mul/nDim2 xd % dim
+	    val	% base value to use to do our lookup
+	    add DataSource exch get %  lookedupval
+	    mulRange nDim2 get mul 	% lookedupval*(ymax-ymin)/(xmax-xmin)
+	    mulRange nDim2 1 add get % lookedupval*(ymax-ymin)/(xmax-xmin) ymin
+	    add % interpolated result
+	}for	% comp1 comp2 ... compN
+    end
+}bd
+
+/max % a b -> max(a, b)
+{
+	2 copy lt
+	{exch pop}{pop}ifelse
+}bd
+
+/sh2
+{	% emulation of shading type 2. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 x1 y1
+	3 index 3 index translate	% origin is now at beginning point of shading
+					% x0 y0 x1 y1
+	3 -1 roll sub	% x0 x1 y1-y0
+	3 1 roll exch 	% y1-y0 x1 x0
+	sub				% y1-y0 x1-x0
+	2 copy
+	dup mul exch dup mul add sqrt	% length of segment between two points
+	dup
+	scale  
+	atan	% atan (dy/dx)
+	%dup (rotation angle = )print ==
+	rotate		% now line between 0,0 and 1,0 is the line perpendicular to which the axial lines are drawn					
+	
+	/Function load setupFunEval	% may need to setup function dictionary by calling setupFunEval
+	
+	% this is now specific to axial shadings. Compute the maximum bounds to fill
+	clippath {pathbbox}stopped {0 0 0 0}if newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+	currentdict/Extend known
+	{
+		/Extend load 0 get
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			xmin ymin xmin abs ymax ymin sub rectfill
+		}if
+	}if
+	% paint the rects. The sampling frequency is that of our table
+	/Nsteps/Function load/Size get 0 get 1 sub store
+	/dx 1 Nsteps div store
+	gsave
+		/di ymax ymin sub store
+		/Function load
+		% loop Nsteps + 1 times, incrementing the index by 1 each time
+		0 1 Nsteps
+		{
+			1 index FunEval sc
+			0 ymin dx di rectfill
+			dx 0 translate
+		}for
+		pop	% pop our function
+	grestore	% origin is back to start point
+	currentdict/Extend known
+	{
+		/Extend load 1 get
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			1 ymin xmax 1 sub abs ymax ymin sub rectfill
+		}if
+	}if
+}bd
+
+/shp	% this paints our shape for shading type 3
+{	% x1 r1 x0 r0 -
+	4 copy
+
+	% fill interior arc
+	dup 0 gt{
+		0 exch a1 a0 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a0 a1 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+
+	% fill exterior arc
+	dup 0 gt{
+		0 exch a0 a1 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a1 a0 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+}bd
+
+/calcmaxs
+{	% calculate maximum distance vector from origin to corner points
+	% of bbox
+	xmin dup mul ymin dup mul add sqrt		% (xmin2 + ymin2)
+	xmax dup mul ymin dup mul add sqrt		% (xmax2 + ymin2)
+	xmin dup mul ymax dup mul add sqrt		% (xmin2 + ymax2)
+	xmax dup mul ymax dup mul add sqrt		% (xmax2 + ymax2)
+	max max max								% maximum value
+}bd
+
+/sh3
+{	% emulation of shading type 3. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 r1 x1 y1 r2
+	5 index 5 index translate	% origin is now at first circle origin
+	3 -1 roll 6 -1 roll sub		% y0 r1 y1 r2 dx
+	3 -1 roll 5 -1 roll sub		% r1 r2 dx dy
+	2 copy dup mul exch dup mul add sqrt
+	/dx xs						% r1 r2 dx dy
+	2 copy 0 ne exch 0 ne or
+	{
+		% r1 r2 dx dy
+		exch atan rotate	% we are now rotated so dy is zero and positive values of dx move us as expected
+	}{
+		pop pop
+	}ifelse
+	% r1 r2		
+	/r2 xs
+	/r1 xs
+	/Function load 
+	dup/Size get 0 get 1 sub	% this is the size of our table minus 1
+	/Nsteps xs		% at some point we should optimize this better so NSteps is based on needed steps for the device
+	setupFunEval		% may need to setup function dictionary by calling setupFunEval
+	% determine the case:
+	% case 0: circle1 inside circle2
+	% case 1: circle 2 inside circle 1
+	% case 2: r1 = r2 
+	% case 3: r1 != r2
+	dx r2 add r1 lt{
+		% circle 2 inside of circle 1
+		0 
+	}{
+		dx r1 add r2 le
+		{ % circle 1 inside of circle 2
+			1
+		}{ % circles don't contain each other
+			r1 r2 eq
+			{	% equal
+				2
+			}{ % r1 != r2
+				3
+			}ifelse		
+		}ifelse
+	}ifelse
+	/sh3tp xs		% sh3tp has the number of our different cases
+	clippath {pathbbox}stopped {0 0 0 0}if 
+	newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+
+	% Arc angle atan( sqrt((dx*dx + dy*dy) - dr*dr), dr)
+	dx dup mul r2 r1 sub dup mul sub dup 0 gt
+	{
+		sqrt r2 r1 sub atan
+		/a0 exch 180 exch sub store 
+		/a1 a0 neg store 
+	}{
+		pop
+		/a0 0 store
+		/a1 360 store		
+	}ifelse		
+
+	currentdict/Extend known
+	{
+		/Extend load 0 get r1 0 gt and	% no need to extend if the radius of the first end is 0
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{	% case 0
+					dx 0 r1 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				}
+				{	% case 1
+					r1 0 gt{0 0 r1 0 360 arc fill}if
+				}
+				{	% case 2
+					% r1 == r2, extend 0
+					% r3 = r, x3 = -(abs(minx) + r), x1 = 0
+				
+					% x(i+1) r(i+1) x(i) r(i) shp
+					0 r1 xmin abs r1 add neg r1 shp
+				}
+				{	% case 3
+					% no containment, r1 != r2
+				
+					r2 r1 gt{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1
+						r1 neg r2 r1 sub div dx mul	% this is point of beginning circle
+						0	% point of ending circle
+						shp	% takes x(i+1) r(i+1) x(i) r(i)
+					}{	% the first circle is the bigger of the two
+						% we find a circle on our line which is outside the bbox in the
+						% negative direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1 calcmaxs	% 0 r1 maxs
+						dup
+						% calculating xs: (-(maxs+r2)*x2)/(x2-(r1-r2))
+						r2 add dx mul dx r1 r2 sub sub div
+						neg				% maxs xs'
+						exch 1 index	% xs' maxs xs'
+						abs exch sub
+						shp
+					}ifelse
+				} 
+			}sh3tp get exec	% execute the extend at beginning proc for our shading type
+		}if
+	}if
+
+	% now do the shading
+	/d0 0 store
+	/r0 r1 store
+	/di dx Nsteps div store
+	/ri r2 r1 sub Nsteps div store 
+	/Function load 
+	0 1 Nsteps
+	{	% function t(i)
+		1 index FunEval sc
+		d0 di add r0 ri add d0 r0 shp
+		{
+		% fill interior arc
+		d0 0 r0 a1 a0 arc
+		d0 di add 0 r0 ri add a0 a1 arcn
+		fill
+		
+		% fill exterior arc
+		d0 0 r0 a0 a1 arc
+		d0 di add 0 r0 ri add a1 a0 arcn
+		fill
+		}pop
+		
+		% advance to next
+		/d0 d0 di add store
+		/r0 r0 ri add store
+	}for
+	pop	% pop our function dict
+
+	% handle Extend
+	currentdict/Extend known
+	{
+		/Extend load 1 get r2 0 gt and	% no need to extend if the radius of the last end is 0
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{
+					dx 0 r2 0 360 arc fill
+				} 
+				{
+					dx 0 r2 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				} 
+				{	% r1 == r2, extend 1
+					% r3 = r, x3 = (abs(xmax) + r), x1 = dx
+					% x(i+1) r(i+1) x(i) r(i) shp
+					xmax abs r1 add r1 dx r1 shp
+				}	
+				{	% no containment, r1 != r2
+			
+					r2 r1 gt{
+						% we find a circle on our line which is outside the bbox in the
+						% positive direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						calcmaxs dup	% maxs maxs
+						% calculating xs: ((maxs+r1)*x2)/(x2-(r2-r1))
+						r1 add dx mul dx r2 r1 sub sub div	% maxs xs
+						exch 1 index	% xs maxs xs
+						exch sub
+						dx r2
+						shp
+					}{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						r1 neg r2 r1 sub div dx mul	% this is point of ending circle
+						0		% radius of ending circle
+						dx 		% point of starting circle
+						r2		% radius of starting circle
+						shp
+					}ifelse
+				}
+			}			
+			sh3tp get exec	% execute the extend at end proc for our shading type
+		}if
+	}if
+}bd
+/sh		% emulation of shfill operator for type 2 and type 3 shadings based on type 0 functions
+{	% shadingDict --
+	begin
+		/ShadingType load dup dup 2 eq exch 3 eq or
+		{	% shadingtype
+			gsave
+				newpath
+				/ColorSpace load scs
+				currentdict/BBox known
+				{
+					/BBox load aload pop	% llx lly urx ury
+					2 index sub				% llx lly urx ury-lly
+					3 index					% llx lly urx ury-lly llx
+					3 -1 roll exch sub 
+					exch rectclip
+				}if
+				2 eq
+				{sh2}{sh3}ifelse
+			grestore
+		}{
+			% shadingtype
+			pop 
+			(DEBUG: shading type unimplemented\n)print flush
+		}ifelse
+	end
+}bd
+
+% end of language level 2 ONLY code
+
+{restore}if not dup{save exch}if
+% languagelevel3 ONLY code goes here
+	L3?{	% we do these loads conditionally or else they will fail on a level 2 printer
+		/sh/shfill ld
+		/csq/clipsave ld
+		/csQ/cliprestore ld
+	}if
+{restore}if
+
+%currentdict dup maxlength exch length sub (number of extra slots in md = )print == flush	% *** how many entries are free
+end
+setpacking
+% count 0 ne { pstack(***extras on stack during prolog execution***\n)print flush}if	% *** BARK if anything is left on stack
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 0 0 48 48
+%%BeginPageSetup
+cg_md begin
+bp
+sdmtx
+[ /CIEBasedABC 4 dict dup begin 
+/WhitePoint [ 0.9505 1.0000 1.0891 ] def 
+/DecodeABC [ 
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+] def 
+/MatrixABC [ 0.4124 0.2126 0.0193 0.3576 0.7151 0.1192 0.1805 0.0722 0.9508 ] def 
+/RangeLMN [ 0.0 0.9505 0.0 1.0000 0.0 1.0891 ] def 
+end ] /Cs1 exch/ColorSpace dr pop
+%%EndPageSetup
+0.60000002 i
+/Cs1 SC
+0.87058824 0.34509805 0.2 sc
+q
+24.153231 0.40799999 m
+37.191399 0.40799999 47.760921 10.977524 47.760921 24.015692 c
+47.760921 37.05386 37.191399 47.623386 24.153231 47.623386 c
+11.115063 47.623386 0.54553849 37.05386 0.54553849 24.015692 c
+0.54553849 10.977524 11.115063 0.40799999 24.153231 0.40799999 c
+h
+W
+0 0 48 48 rc
+-4.4544616 52.623386 m
+52.760921 52.623386 l
+52.760921 -4.592 l
+-4.4544616 -4.592 l
+h
+f
+Q
+q
+0 0 48 48 rc
+26 0 0 43 10 0 cm
+BI
+/Width 78
+/Height 129
+/BitsPerComponent 8
+/Decode[
+0 1
+0 1
+0 1
+]
+/DataSource cg_aiproc
+ID
+J)ko]hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=D9SJ=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4iJ)49`hH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihIT(5HXGldB'>7tl^`h!XIA[jX7*BhmA6!2R"FO[EohaZj)IuS?9@"G1Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=D9SJ=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i+Pp3VhH2Sj=>Sf91Yu4ihH2Sh=uP#tK%7fTg=tELm-XfOj8XW.
+r;66BddOH6kD4$5@6WOM1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4]
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i,MlNYhH2Sj=>Sf91Yu4ihH2Sj=>Sc8
+1u!4[f;kOne(!10hu<?'s*t%Hr:o.#n$/PFE)>Cn1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH1^QhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Q_hH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>S`C6eRfZe]Gkpkir*DfDkjLJ+_.+kD*p2=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=:[4E=>Sf91Yu4ihH2Sj=>MMb=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj>WCfCQh0P,cMrCjk2G["Mr.r,hH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4?1Yu4ihH2Sj=>M;\=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sc?4QiT+o@D4cq"MZ*J,Jj)l&pAL=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=9CA9=>LuS=>Sf91Yu4ihH2Sj=>Sf91Yu4igfcVn^:*h4q6U*L
+p!(A4C.[8a1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>LlP
+=>Sf91Yu4ihH2Sj=>Sf91Yl+ff<(h>o^o9cHN!R0l^Wae=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i45O'qhH2Sj=>Sf91Yu4ihH2SgF&piCf\>3;gtpoDhr!;KiSWVR
+iSrnWj5f7]jlGOcjlYail0@m4o`"j5s)dq[`SXr]hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2R%hH2Sj=>Sf91Yu4ihH2Sj=>SWdEn7\%f<M7+XJ+7DRFn0qfV"AYVOH,=U=ZcQ
+f"/6=_7\:?a48eof%A[7j5]Rqn,E12s)I_X`SOiZhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4i:#8u.hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>S`<454aSg4aFtRY]RtUYO,8kiq@2o`"jDs).MS_VSKUhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91K3.41Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Z*F_jg(ZKhV.u,gAbs\bJ3"M8)@?(hH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2R+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihdJ_5P^Mu/VY8Q`r:KR's8N"/ptXEfWL)[i=l*7:hH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>N.t=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Zj=&o>A$7q"M,p>l3mNn[Y[\G$*U'1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Mhk=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4iiG;3T^9RP+nYH1crquZ]Xde0O2r7XmhH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Qe
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Si?TdA^ZMaUsR/^"YiS3F=>M`I<hH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4i.Ge/_hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yce@l/:Csrf[:UrquZ^YFaTS2VqOl
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>M;\=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4igk9M7n*c#28+O?shH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91F(aY1Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yl+fhPHM3q"TF?7K;bOOks1rhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QShH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ih-E)!
+^:+%=JcG]Krr,4INHF#Z1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91EG=S1Yu4ihH2Sj=>Sf91Yu4ihH2Si>;t-K](G[gJcGKE62gTQj)IuR=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QPhH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Y@qDiSrmKs7-+QpY!pM=Z"u;1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2QMhH2Sj=>Sf91Yu4ihH2Sj=>ScC6IaB.rqD!Dmf,B8TSqZ/1Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QMhH2Sj=>Sf91Yu4ihH2Sj
+=>SU+QfI/gJcG'948nsKibhNJ=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91DJ\J1Yu4ihH2Sj=>Sf91YcnGeCE.Lq18S0s#B\u`njfRhH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QJhH2Sj=>Sf91Yu4ihH2Sb\#ncTkCN[0rsmuIn]T;B
+^;Ss:]A)6&nG*#@jEXtd=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>LQG=>Sf91Yu4ihH2SfIqI6_f`(Jnru;"4q#$GOc:M9@5uXR>8tS+9T/fN9A9,'8ipcsI2=ni!hH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QGhH2Sj=>Sf91Yu4if"elI
+f@^)uk5Q%Wlh%s2i0BnXIu;(=XjkeMl)jtaI>l*ICpSeW`L*CFXgH`XY1.]K^.MP+7TQD>h!P+>r8MTh
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i&`-VGhH2Sj=>Sc?4Ohs6
+e^rIQrp9Y*kj.n_K"aQNV)h8B7TQBrEO9M+\8$5sH\T;tkju7_#g1QY\%pnqq#'U\45&HWTrHK>rr;Mu
+WSU`5hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91D/JG1Yu4ihH2SgG[/eN
+f\5-:m/I[6aQ$E=ZUe<"E.5F0^u"n`r:U'kn+$1]rrVukr8@T1rV6-FAOG<V1Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QGhH2Sj=>Sf91YIn>e^rI3ioBM-$e=#!=)5-BBX,4ehgth%
+s"Ef@R,1q$hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>LQG=>Sf91Yu4if;kOo
+f@]6KkjSNWP+g34G.H>`mXbE1s"F<?n)%D3hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>LQG=>Sf91Yu4ie\o8Rf@]HWmdL/ZAU:u5e*2G`mf+j(Squ6*1Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4i&`-VGhH2Sh?9H`gf@AL*o(2JArrSakdt.Pbs"+$1j5*orhH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QGhH2Sj=>S]U?.IQZe^rIGo_%\Q!pJqBJcFs6.HcP+
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QGhH2Sj=>SWlIFZs%e^rICnaV21e,Lle
+]<'jk1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91D/JG1Yu4ifU\&Qf@\X*f^/"mJcFs6
+!qQ!Yn,Fj6m-*;.1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91D/JG1Yu4ifp79@f@\X*
+f]_SbJcG9?'^kMbH&oEr>*U[8N^I6COe]kkqY^$d-KKARhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4i&`-VGhH2SeNdB7-f[\U+jQ>TUs7H=0n+$*=@@8]CN\+%e/PhB[;3+RkTjW/FrVc`js!I05
+QJP_"hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91D/JG1Yu4ig4aFpf@\X*f\kcLgA_c_r;F"<
+f7fX+D1o-VUVtI/jK8FoHB5Ne:Q@#&N\+%e/PhD,\'b3T"bDrNV6eJBs!IKlce_b[hH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91D/JG1Yu4ig3mM^f@\X*f\G?@h>\DRkO2VtVCbT(/PhBY:Q@#&N\+%e
+K9s7HqYRW!)E_8j/PhBY:Q@#&N\+%eMO_KQo_<'LX_*'bq#;]>p@R3D1Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>LQG=>Sf91YQtSe^rI(f@\d1gYi)PqYU1gDPA^YN\+%e/PhBY:Q@YGQ^+Gf?$E6-
+TYe/;*V8t!/PhBY:Q@#&N\+%e/PhBY:Q@#&N\+%e9PL*ks!-N?:#8u.hH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>LQG=>Sf91YZbBe^rI(f@\X*f`(m1rtM03bUlVN/PhBY:Q@#&N\+%eTs2c?rs7rYoI`t#
+hW4(4ru+=9Rk7Er/PhBY:Q@#&N\+%e/PhBY:QBCLZM"5Bk_jK<=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4i&`-VGhH2ShAOP)#f[\U+e^rIQqr@]!D1o,F:Q@#&N\+%e/PhBY:QBCLZM4.k[(t6E:QDNe
+d^K/oPbl>N:Q@#&N\+%e/PhBY:Q@#&N\+%e^<,1's!-s2Qekh#hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>LZJ=>Sf91Yl=te^rI(f@\X*f_"k0j8U5rBqHtQN\+%e/PhBY:Q@#&N\+%e1/j;e:Q@#&NfB[I
+[f70?qtsoMW\%#,/PhBY:Q@#&N\+%eLmu0Ms!.-S\DC=DhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>L6>=>Sf91Yu4irmV5(f@\X*f^/"nj8U6=KWm%(N\+%e/PhBY:Q@#&N\+%e/PhBY:Q@#&NifnAZi:X9
+rVi_&ctIs39kg5>LpFe;h!b7fp!1J3=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i'])qJhH2Sj
+=>SLJ_U[8je^rI7k2t_(+JQ-c/PhBY:Q@#&N\+%e/PhBY:Q@#&N\+%e02[efjR/*/,PK[2hH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91DJ\J1Yu4ihH2ScYGB_#f[\U+gtprKruLt5r)@X1/PhBY:Q@#&
+N\+%e/PhBY:Q@#&NfTmNN;k-sg=+n\1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QJhH2Sj=>Sf9
+1YA"Ie^rI(f@\X*f`(m1ru0q]n6C18/PhBY:Q@#&N\+%e/PhC\R(`@mr/CY#q;L)b=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4i(Z&7MhH2Sj=>SZ\B%>Mce^rI(f@]fkpYc&`rVc`)_UsX4^2Jb2Pbl@G
+f]Iqg,P^0KhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91DenM1Yu4ihH2ShAk(>&f[\U+e^rIA
+n*bi-e,LZa`k(#/1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QMhH2Sj=>Sf91Yu4ie]c1df@\X*
+f]D;ZJcF4!,OVY%hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91DenM1Yu4ihH2Sj=>SR8Wn#_R
+e^rI0hqs"be,LZWP'Yte1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QMhH2Sj=>Sf91Yu4ifU@]J
+f@\X*f[\U+rr.KKf)HuTE`:gs1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QPhH2Sj=>Sf91Yu4i
+g43kef@\X*f[\U+p@n<4s4RE!out8/=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QPhH2Sj
+=>Sf91Yu4igh0+,f@\X*f[\U+mdBOps4mYRr[-ZK=5I%8hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91E,+P1Yu4ihH2Sj=>Sf91Y'^me^rI(f@]3IkCNZgs!dQY\DC=DhH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4i)W"RPhH2Sj=>Sf91Yu4if!D@+f@\X*f\PEAJcFX-/Gnl$ib_EH=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>LlP=>Sf91Yu4ihH2Sj=>SWuLXk#/e^rI(f@^*$JcFj3
+0DaqoibhQK=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91E,+P1Yu4ihH2Sj=>Sf9
+1YR@ke^rI(f@\X*f`(Sqs60J<q;^;iBh.#^1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2QShH2Sj=>Sf91Yu4ihH2ShAOY/$f[\U+e^rI@md>i0&cMFqoZFr;ZD$Z^On#r[ptjX%rr2rs
+r\a;a[GYR^hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i*SsmShH2Sj
+=>Sf91Yu4ihH2SabK8;df[\U+jQ>T`s&SmIdH[$Ihd8J%=>Sf91Yu4ihH2Sj=>SoK7coD>ibhNJ=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91EG=S1Yu4ihH2Sj=>Sf9
+1Yu4if<M7(f@\X*f\G<>P5ee`ki:lbEo'nShH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i*SsmShH2Sj=>Sf91Yu4i
+hH2SdQA*l@f[\U+e^rIQrL<grrV#mNV30V=2r7XmhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QVhH2Sj=>Sf9
+1Yu4ihH2Sj=>SZZA(B2`e^rI(f@]`gopbtjkD*m1=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QV
+hH2Sj=>Sf91Yu4ihH2Sj=>S`A5h4K=e^rI(f@]HVm@O>hptXBU=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>M)V=>Sf91Yu4ihH2Sj=>Sf91Yu4ie]5VYf@\X*f]2&ST)WBjYFXNP1Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91EbOV1Yu4ihH2Sj=>Sf91Yu4ihH2ScXeF:sf[\U+g>(MUs(1GYHeqj\
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i,MlNYhH2Sj=>Sf91Yu4ihH2Sj=>SWnJ(<0'e^rI(
+f@]uur1X.%jEOkb=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>M2Y=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4igNZuRf@\X*f[\U+oCMUJs(1,!6Jbg#hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i,MlNY
+hH2Sj=>Sf91Yu4ihH2Sj=>S`=4Ohs6e^rI(f@]BSm%jYprqlQK=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91F(aY1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>SLF^"(`ee^rI4j5Zs8B`%/ZhH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>M2Y=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2SdW1;Dif[\U+
+f\5)Us(M/[d,%k\hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QYhH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ifoCC/f@\X*f[\U+rq`PmB_0*KhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>M;\=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2SgFB@#Ef[\U+e^rIDna`UXB^VphhH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>M;\=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Si>;t'\eCE1'e^rI;l0>2H
+B^(_-hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>M;\=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>SOA\(0*_e^rI2iSg^7B]OMHhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>M;\
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>SU(PL\:;e^rI*g"QH)WrHbj@mJmQ1Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4i-Jhi\hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ifna\!f@\X*f[\U+rqNVq
+C]=2+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91F_0_1Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91YZbBe^rI(f@\X*f^J>!XoE29rVYMS1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Q_hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Si=>SIRd+-b#e^rI9kNJrGB\liIhH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>MD_=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Y0%=
+e^rI(f@\p:i2ZfjhHMqq=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91F_0_1Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ifU[uOf@\X*f[\U+rr0&"B]!2\hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>MD_=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Y[Iqe^rI(f@\X*f`(THs(LJ>
+>i&R=hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QbhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>S`E8(H5De^rI(f@]KYm]HM&lBm1[=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1G%Bb1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sabf\Jff[\U+jQ5O+s(Lo2VqtN3hH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QbhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Y8k/
+e^rI(f@\j6h6$]jp=@LF=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91G%Bb1Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2SeQ@m`>f[\U+e^rIQr3637rUod==>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91G@Te1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2SgHXPCUf[\U+e^rIF
+o^o9cA`@N"hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QehH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91YlG&e^rI(f@\X*f]qehXoDtrMfRZV1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91G@Te1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>SLH_:@/ie^rI5j5d?BAaZRbhH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QehH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4if;Y=kf@\X*f\,!5XoDu)ah?P51Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91G@Te1Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>SWkHI^X"e^rI(f@^*!YlA;4nEo(82;VFkhH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91G[fh1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>S]Q=Ol$U
+e^rI(f@]Wanu_q$k(@='=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Q\hH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ih-2l<e-OUVf[\U+kiqB7s'kN1XPR&8hH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91G[fh1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Y07Ke^rI(f@]!>iN<,h
+r:043=Z,&<1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QhhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2ScUQj<\f[\U+f@ejVriQ3-k(II*=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i1>Z+h
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ifna\!f@\X*f[\U+rqNVq?h(e3hH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91H"#k1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91YZbB
+e^rI(f@\X*f^J:uXoDc+naG=<2VqOlhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QkhH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Si=>SIRcdgY"e^rI9kNJrG>ip`ThH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Mhk=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Y0%;e^rI(f@\p9hl?]]
+o"D6`=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91H"#k1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ifUIfLf@\X*f[\U+rr&u!>l=0]hHMqq=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Mqn=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91YR@me^rI(f@\X*f_+t3WrH5dP^M=i1Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91H=5n1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4iggrq)f@\X*
+f[\U+m-X5@s&o-RfA9UchH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i38RanhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>SILa48eoe^rI6jlNE?<p#!HhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i38RanhH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>SO3Ut+)Le^rI-gten.<qX_ThH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4i38RanhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>STnJ^rB)
+e^rI(f@^*#WrN(t;r_mshH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91HXGq1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2SfH!]%Qf[\U+e^rIFoCSs\;t7N&hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91HXGq1Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Si?Tcihf@AL*e^rI=lg(JK;uQOei+5:4=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91HXGq1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>SLF^"(`e
+e^rI4io?j7;!tBOhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>N%q=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2ScW12>hf[\U+f\5)Us%rX_mGD20hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2QthH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ifo:7,f@\X*f[\U+q>0r`s%VjSNS[bnhH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i53IZ9
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91YZqMe^rI(f@\X*f^\M&V#O0e
+nEo+?45O'qhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Htg:r9U/;hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>S`9
+2Up4)e^rI(f@]<Ol(S,LmA?*(=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2T2s#BSaZ/8tRhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sb]X?;Af[\U+hr*Ies%<4\nD@Y<hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91\gu-r:04AT8MK02r7XmhH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>SU&P1A1:e^rI)f\-9'U&RXNWgDRE1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2T)s"aH7j6;\OhH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>SZcDq3Ile^rI(f@]impn@^XrUod?@mSsR1Yu4ihH2Sj=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu7lm/JX3gstP>BAQ`HhH2Sj=>Sf9
+1Yu4ihH2Sj=>Sf91Ycb>e^rI(f@\X*f^A4tT)V4IZ(TrU1Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4i
+hH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>T,tE;APMk5Qe$cc+pf=5I%8hH2Sj=>Sf91Yu4ihH2Si
+=#/=PcILP!e^rI8kNAH:55k<OiFka<=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ihH2Sj=>T&d?h`0tqu>^V,Q@Z?o"hZkCJ3Md1Yu4ihH2Sj=>Sf91Y9%9e^rI(f@\p9hjaX'n[Y[V
+=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4iic%ceaLq3Gh>\MpqYBTdU>TNH
+hH2Sj=>Sf91YA+Pe^rI(f@\X*f`(i@s"aTNqVl<bhH2Sj=>Sf91Yu4ihH2Sj=>Sf91Yu4ihH2Sj=>Sf9
+1Yu4ii+GLK\uYi.qssd=ru1h-o'sApkD*p2>WCGfB%>Mce^rI(f@]cip7)(2o"_Qf=>Sf91Yu4ihH2Sj
+=>Sf91Yu4ihH2Sj=>Si@46VWEo"_R0p\*tRcMnLTp\"*t]\:<<e^W."f@]HWm[O5!rr)cSE)GIo1Yu4i
+hH2Sj=>Sf91Z2h3lBm.pbJ=)PpZ):mrsSc$q<QSVkKV'Gp@XpT'_B8PhH2Sj=>SrT:[Fj;pXdajrVbIM
+\c2s2kMl9leGSk(V#L_tmHX2LVYT6,cMt-K%f>\ZptXEph:;>_hu36=_Z(,DoC;Y;hY>mVpY=<rnEn3p
+U&R=Ur;6BWkP3rfptXBngXQ#RebJ"Qpu'm%jPKasj880*qWQu8j5'Lgg%aFUpY=<ngXQ#ReG.tTqsEYI
+rVa2)JcD):J,
+~> %APLeod
+EI
+Q
+0.99215686 0.82352942 0.039215688 sc
+q
+22.799999 21.094616 m
+22.974922 22.152 25.707232 24.152308 27.642 24.273232 c
+29.580923 24.395538 30.185078 24.367846 31.800461 24.754616 c
+33.42046 25.141384 37.585846 26.179846 38.73877 26.712461 c
+39.894463 27.246 44.78677 26.448462 41.337692 24.525692 c
+39.846001 23.690769 35.825539 22.157539 32.950615 21.300922 c
+30.080307 20.441999 28.339846 22.120615 27.384462 20.709692 c
+26.624769 19.587231 27.230309 18.050308 30.660923 17.731384 c
+35.293385 17.302155 39.734768 19.818001 40.223537 18.481384 c
+40.714615 17.145231 36.242767 15.477693 33.519691 15.424615 c
+30.799847 15.373384 25.317692 17.222769 24.494308 17.795538 c
+23.67 18.366922 22.572001 19.701693 22.799999 21.094616 c
+h
+W
+0 0 48 48 rc
+17.769493 31.874554 m
+47.549366 31.874554 l
+47.549366 10.423572 l
+17.769493 10.423572 l
+h
+f
+Q
+0.39607844 0.73725492 0.27450982 sc
+q
+24.896769 7.1113849 m
+24.896769 7.1113849 18.388153 10.582616 18.282 9.1744614 c
+18.172153 7.7640004 18.282 2.0164618 19.040308 1.5816925 c
+19.799999 1.1487695 25.223078 4.4007692 25.223078 4.4007692 c
+24.896769 7.1113849 l
+h
+W
+0 0 48 48 rc
+13.245829 14.510624 m
+30.223078 14.510624 l
+30.223078 -3.4579916 l
+13.245829 -3.4579916 l
+h
+f
+Q
+q
+27.390461 7.3301539 m
+27.390461 7.3301539 31.837385 10.692462 32.815384 10.475538 c
+33.789692 10.254461 34.007076 3.3170772 33.138924 2.9852309 c
+32.270771 2.6667695 27.181385 4.7450771 27.181385 4.7450771 c
+27.390461 7.3301539 l
+h
+W
+0 0 48 48 rc
+22.181385 15.485601 m
+38.682838 15.485601 l
+38.682838 -2.0479569 l
+22.181385 -2.0479569 l
+h
+f
+Q
+0.26274511 0.63529414 0.26666668 sc
+q
+23.321077 6.7435389 m
+23.321077 4.4672308 22.993847 3.490154 23.971846 3.273231 c
+24.94523 3.0549233 26.789078 3.273231 27.441692 3.7061541 c
+28.092461 4.1390772 27.548769 7.0656924 27.334616 7.6130772 c
+27.114462 8.1549234 23.321077 7.7201538 23.321077 6.7435389 c
+h
+W
+0 0 48 48 rc
+18.268482 12.848813 m
+32.751377 12.848813 l
+32.751377 -1.8124834 l
+18.268482 -1.8124834 l
+h
+f
+Q
+0.39607844 0.73725492 0.27450982 sc
+q
+23.735077 7.2498465 m
+23.735077 4.9730773 23.40877 3.9960003 24.385386 3.7795386 c
+25.357384 3.5584617 27.202616 3.7795386 27.855692 4.2124619 c
+28.506462 4.6467695 27.962307 7.572 27.746769 8.1198463 c
+27.528461 8.661231 23.735077 8.2246151 23.735077 7.2498465 c
+h
+W
+0 0 48 48 rc
+18.68272 13.354939 m
+33.165188 13.354939 l
+33.165188 -1.3073694 l
+18.68272 -1.3073694 l
+h
+f
+ep
+end
+%%Trailer
+%%EOF

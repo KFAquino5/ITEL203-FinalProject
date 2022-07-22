@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>HTML5_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="HTML5_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HTML5" fill="#6F6F6F" fill-rule="nonzero">
+            <path d="M0,24 C0,10.7451654 10.7451654,0 24,0 C37.2548346,0 48,10.7451654 48,24 C48,37.2548346 37.2548346,48 24,48 C10.7451654,48 0,37.2548346 0,24 Z M13.517094,37.1210502 L23.9148522,40 L34.3413189,37.1169897 L36.6608696,11.2 L11.2,11.2 L13.517094,37.1210502 Z" id="Combined-Shape"></path>
+            <g id="icon" transform="translate(16.000000, 16.000000)">
+                <polygon id="Path" points="3.84072289 6.97670682 3.55437751 3.62923694 15.9429719 3.63293173 16.2274698 0.403694779 0 0.4 0.859036144 10.2650602 12.0985542 10.2650602 11.6976707 14.484498 8.11373496 15.4746988 4.47437751 14.4771084 4.24345382 11.8796787 1.02899598 11.8796787 1.43542169 17.0154217 8.11373496 18.8 14.7384739 17.0228113 15.6547791 6.97670682"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

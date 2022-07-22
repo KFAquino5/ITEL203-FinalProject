@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Bitbucket_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Bitbucket_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bitbucket" fill="#6F6F6F" fill-rule="nonzero">
+            <path d="M0,24 C0,10.7451654 10.7451654,0 24,0 C37.2548346,0 48,10.7451654 48,24 C48,37.2548346 37.2548346,48 24,48 C10.7451654,48 0,37.2548346 0,24 Z M13.125,13.6975 C12.9034367,13.6946424 12.6919497,13.7899047 12.5472702,13.9577329 C12.4025907,14.1255611 12.3395285,14.3487759 12.375,14.5675 L15.55875,33.895 C15.6406313,34.3832107 16.0612374,34.742149 16.55625,34.74625 L31.83,34.74625 C32.2015446,34.751032 32.5205787,34.4830434 32.58,34.11625 L35.76375,14.57125 C35.7992215,14.3525259 35.7361593,14.1293111 35.5914798,13.9614829 C35.4468003,13.7936547 35.2353133,13.6983924 35.01375,13.70125 L13.125,13.6975 Z" id="Combined-Shape"></path>
+            <polygon id="Path" points="26.53125 27.66625 21.65625 27.66625 20.33625 20.77 27.7125 20.77"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Sketch_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Sketch_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sketch" fill="#6F6F6F" fill-rule="nonzero">
+            <path d="M24,48 C10.745166,48 0,37.254834 0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 Z M29.488437,12.8 L18.8992908,12.8 L13.8231886,15.0884369 L9.6,19.7796482 L24.2042554,39.2 L38.8085107,19.7796482 L34.5957448,15.0468086 L29.488437,12.8 Z" id="Combined-Shape"></path>
+            <polygon id="Shape" points="26.3222468 35.9609759 33.0776511 24.8442043 35.9171178 22.4501674"></polygon>
+            <polygon id="Shape" points="17.2541901 25.4695035 30.9430582 25.4695035 24.2042554 37.8893618"></polygon>
+            <polygon id="Shape" points="12.4814695 22.4501674 15.3209362 24.8442043 22.0763405 35.9609759"></polygon>
+            <polygon id="Shape" points="14.0629106 16.2534071 18.420783 18.4378043 15.3002156 23.2643235 10.8070978 19.9055943"></polygon>
+            <polygon id="Shape" points="19.8451971 13.5604822 28.6420766 13.5604822 32.9730497 15.4704567 28.6235404 17.3650156 19.8266611 17.3650156 15.521027 15.472017"></polygon>
+            <polygon id="Shape" points="31.2775206 23.8884369 16.8604993 23.8884369 19.7297986 18.7914894 28.3234043 18.8122724"></polygon>
+            <polygon id="Shape" points="37.5914894 19.9055943 32.9730497 23.3615603 29.6886526 18.4404255 34.3356767 16.2534071"></polygon>
+        </g>
+    </g>
+</svg>

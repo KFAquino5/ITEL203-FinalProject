@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<link href="style.css" rel="stylesheet" type="text/css">
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Register • The Virtual University</title>
+    <!--StyleSheet CsS File-->
+    <link rel="stylesheet" href="style.css">
+    <!--FAV ICON-->
+    <link rel="shortcut icon" href="ShortcutLogo.png">
+   </head>
+
+<body>
+  <section class="header">
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="logo 3.png">
+        </a>
+        <!--For Responsive Menu-->
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+
+        <!--Navigation-->
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Forums</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">Database</li>
+              <div class="dropdown-content">
+                <a href="#">Professors</a>
+                <a href="#">Students</a>
+              </div>
+            </div>
+            <li><a class="active" href="login.html">Sign in</a></li>
+        </ul>
+    </nav> 
+
+  <div class="container">
+    <div class="title">Student Registration Form</div>
+    <div class="content">
+      <form action="connect.php" method="post">
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your First name" name="firstName" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Last name</span>
+            <input type="text" placeholder="Enter your Last name" name="lastName" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Course</span>
+            <input type="text" placeholder="Enter your Course (Ex: BSIT)" name="course" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Year & Section</span>
+            <input type="text" placeholder="Enter your Year and Section (Ex: 2A)" name="yearSection" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your Email" name="email" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Student Number</span>
+            <input type="text" placeholder="Enter your Student Number  (Ex: 0320-2682)" name="studentNumber" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" name="pw" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" name="confirmPassword" required>
+          </div>
+          
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" value="m" id="dot-1">
+          <input type="radio" name="gender" value="f" id="dot-2">
+          <input type="radio" name="gender" value="o" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Others</span>
+            </label>
+
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+
+        
+
+        <div class="already-account">Already have an account? <span><a href="login.html">Login here</a></span>
+          </div>
+
+
+
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

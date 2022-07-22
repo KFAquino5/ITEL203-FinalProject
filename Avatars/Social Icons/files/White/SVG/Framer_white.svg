@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Framer_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Framer_white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Framer" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M24,48 C10.745166,48 0,37.254834 0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 Z M14.4,32 L24,41.6 L24,32 L14.4,32 Z M14.4,22.4 L14.4,32 L24,32 L24,22.4 L14.4,22.4 Z M24,22.4 L24,32 L33.6,32 L24,22.4 Z M24,12.8 L24,22.4 L33.6,22.4 L33.6,12.8 L24,12.8 Z M14.4,12.8 L24,22.4 L24,12.8 L14.4,12.8 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
